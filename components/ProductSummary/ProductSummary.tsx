@@ -9,7 +9,7 @@ type ProductSummaryProps = {
 
 const ProductSummary = ({ product }: ProductSummaryProps) => (
   <>
-    <Item.Group as="section">
+    <Item.Group as="section" className="px-2">
       <Item style={{ alignItems: 'center' }}>
         <Item.Image size="medium">
           <img src={product.image} alt={product.name} />
