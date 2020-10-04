@@ -5,12 +5,6 @@ const data: Record<TProductId, TProduct> = {
     sku: 'NUR72KCM',
     price: 18,
     image: '/images/libro_poderahora.jpg',
-    attributes: {
-      description: 'Descripción',
-      shape: '',
-      hardiness: '',
-      taste: '',
-    },
   },
   '6trfgkkj': {
     name: 'El poder del Ahora - Eckhart Tolle (224 páginas)',
@@ -18,12 +12,6 @@ const data: Record<TProductId, TProduct> = {
     sku: 'AX4M8SJV',
     price: 18,
     image: '/images/libro_poderahora.jpg',
-    attributes: {
-      description: 'Descripción',
-      shape: '',
-      hardiness: '',
-      taste: '',
-    },
   },
   '7bcr49em': {
     name: 'El poder del Ahora - Eckhart Tolle (224 páginas)',
@@ -31,12 +19,6 @@ const data: Record<TProductId, TProduct> = {
     sku: 'HYA78F6J',
     price: 18,
     image: '/images/libro_poderahora.jpg',
-    attributes: {
-      description: 'Descripción',
-      shape: '',
-      hardiness: '',
-      taste: 'Info',
-    },
   },
 }
 
