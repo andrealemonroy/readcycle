@@ -35,7 +35,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 const ProductPage = ({ product }: { product: TProduct }) => {
   return (
     <Layout>
-      {product == null ? null : <ProductSummary product={product} />}
+      {product == null ? null : (
+        <ProductSummary className="px-2" product={product} />
+      )}
     </Layout>
   )
 }
