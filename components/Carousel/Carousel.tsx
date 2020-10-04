@@ -1,6 +1,6 @@
 import { Carousel } from 'react-responsive-carousel'
 
-const HomepageCarousel = ({ mobile }) => (
+const HomepageCarousel = () => (
   <Carousel
     showThumbs={false}
     showStatus={false}
