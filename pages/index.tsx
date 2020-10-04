@@ -8,7 +8,7 @@ import ProductList from '@components/ProductList/ProductList'
 import { Header } from 'semantic-ui-react'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await fetch('https://platzi-avo.vercel.app/api/avo')
+  const response = await fetch('https://readcycle.vercel.app/api/avo')
   const { data: productList }: TAPIAvoResponse = await response.json()
 
   return {
