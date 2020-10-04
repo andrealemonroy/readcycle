@@ -5,9 +5,10 @@ import fetch from 'isomorphic-unfetch'
 import Layout from '@components/Layout/Layout'
 import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader'
 import ProductList from '@components/ProductList/ProductList'
+import { Header } from 'semantic-ui-react'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await fetch('https://platzi-avo.vercel.app/api/avo')
+  const response = await fetch('/api/avo')
   const { data: productList }: TAPIAvoResponse = await response.json()
 
   return {
@@ -21,11 +22,14 @@ const HomePage = ({ productList }: { productList: TProduct[] }) => {
   return (
     <Layout>
       <KawaiiHeader />
-      <section>
+      {/* <section>
         <Link href="/yes-or-no">
-          <a>¿Deberia comer un avo hoy?</a>
+          <a>Todos nuestros libros</a>
         </Link>
-      </section>
+      </section> */}
+      <Header size="huge" as="h1" textAlign="center">
+        Los más vendidos
+      </Header>
       <ProductList products={productList} />
       <style jsx>{`
         section {

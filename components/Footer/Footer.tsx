@@ -12,7 +12,7 @@ const Footer = () => (
       borderTop: '1px solid #f2f2f2',
     }}
   >
-    <Container text>
+    <Container text className="py-2">
       <Grid stackable>
         <Grid.Row>
           <Grid.Column width={4}>
@@ -20,7 +20,7 @@ const Footer = () => (
             <List>
               <List.Item>
                 <Link href="/about">
-                  <a>Conoce más</a>
+                  <a>Sobre ReadCycle</a>
                 </Link>
               </List.Item>
             </List>
@@ -30,38 +30,29 @@ const Footer = () => (
             <List>
               <List.Item>
                 <Link href="/">
-                  <a>Todos los productos</a>
+                  <a>Todos los libros</a>
                 </Link>
               </List.Item>
             </List>
           </Grid.Column>
           <Grid.Column width={7}>
-            <Header as="h4">Hecho para</Header>
-            <p>
-              <a href="https://platzi.com/">Platzi y su curso de Next.JS</a> de
-              Platzi dictado por{' '}
-              <a href="https://twitter.com/jonalvarezz">@jonalvarezz</a>
-            </p>
+            <Header as="h4">ReadCycle</Header>
             <List horizontal style={{ display: 'flex' }}>
               <List.Item
                 icon="twitter"
                 style={{ display: 'flex' }}
-                content={<a href="https://twitter.com/jonalvarezz">Twitter</a>}
+                content={<a href="">Twitter</a>}
               />
               <List.Item
-                icon="github"
+                icon="instagram"
                 style={{ display: 'flex' }}
-                content={
-                  <a href="https://github.com/jonalvarezz/platzi-nextjs">
-                    GitHub
-                  </a>
-                }
+                content={<a href="">Instagram</a>}
               />
             </List>
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <div className="colophon">
+      {/* <div className="colophon">
         <p className="colophon-entry">
           Icons made by{' '}
           <a
@@ -95,7 +86,7 @@ const Footer = () => (
             California Avocado
           </a>
         </p>
-      </div>
+      </div> */}
     </Container>
 
     <style jsx>{`

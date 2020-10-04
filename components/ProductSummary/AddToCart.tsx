@@ -69,7 +69,7 @@ const AddToCart = ({ product }: AddToCartProps) => {
         onChange={handleChange}
         action={{
           color: 'green',
-          content: 'Add to Cart',
+          content: 'Añadir a la canasta',
           icon: 'plus cart',
           onClick: handleSubmit,
           loading,
@@ -82,7 +82,7 @@ const AddToCart = ({ product }: AddToCartProps) => {
       <Transition duration={{ hide: 500, show: 500 }} visible={visible}>
         <div style={{ color: 'green', position: 'absolute' }}>
           <Icon name="check" />
-          Added to cart
+          ¡Añadido!
         </div>
       </Transition>
     </>

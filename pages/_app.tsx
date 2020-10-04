@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app'
 import 'semantic-ui-css/semantic.min.css'
 import '../global.css'
-
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import CartProvider from '@store/Cart'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {

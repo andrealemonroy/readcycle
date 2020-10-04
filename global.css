@@ -13,3 +13,36 @@
   margin: 1rem auto 0;
   max-width: 80ch;
 }
+.carousel.carousel-slider {
+  height: 70vh;
+}
+
+.carousel .slide {
+  color: white;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* .ui.segment {
+  padding: 0 !important;
+} */
+
+.ui.menu {
+  margin: auto !important;
+}
+
+@media screen and (max-width: 540px) {
+  .carousel .slide {
+    min-height: 100vh !important;
+  }
+  .carousel.carousel-slider {
+    min-height: 100vh !important;
+  }
+}
+.ui.text.container {
+  min-width: 100vw !important;
+}
+/* .py-2 {
+  padding: 3em 0;
+} */

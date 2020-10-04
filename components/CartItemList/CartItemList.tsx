@@ -19,10 +19,8 @@ const CartItemList = ({
   if (items.length === 0)
     return (
       <Message warning as="section">
-        <Message.Header>Your cart is empty</Message.Header>
-        <p>
-          You will need to add some items to the cart before you can checkout.
-        </p>
+        <Message.Header>Tu canasta está vacía</Message.Header>
+        <p>Debes agregar libros a tu canasta para continuar.</p>
       </Message>
     )
 
