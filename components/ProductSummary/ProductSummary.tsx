@@ -27,7 +27,7 @@ const ProductSummary = ({ product }: ProductSummaryProps) => (
         </Item.Content>
       </Item>
     </Item.Group>
-    <ProductAttributes {...product.attributes} />
+    {/* <ProductAttributes {...product.attributes} /> */}
   </>
 )
 
